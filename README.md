@@ -46,7 +46,7 @@ NEXTAUTH_URL=http://localhost:3000
 NEXTAUTH_SECRET=supersecretkey123
 
 # 1️ Clone the repository
-git clone https://github.com/<your-username>/timesheet-management.git
+git clone https://github.com/siddharthnaik77/timesheet-management.git
 
 # 2️ Navigate to the project folder
 cd timesheet-management
