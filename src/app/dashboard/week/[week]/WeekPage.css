@@ -1,0 +1,100 @@
+/* =========================
+   WeekPage Responsive Styles
+   ========================= */
+
+@media (max-width: 640px) {
+  /* Wrapper spacing */
+  .week-container {
+    padding: 12px;
+  }
+
+  /* Reduce card padding and fix overflow */
+  .week-card {
+    padding: 12px !important;
+    border-radius: 10px !important;
+  }
+
+  /* Stack header vertically */
+  .week-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 8px !important;
+  }
+
+  /* Progress section adjustment */
+  .week-progress {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  /* Each day block */
+  .day-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  /* Task card */
+  .task-card {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+  }
+
+  /* Task item inside day */
+  .task-card .ant-tag,
+  .task-card button,
+  .task-card p {
+    font-size: 13px !important;
+  }
+
+  /* Dropdown button */
+  .task-card .ant-btn-text {
+    padding: 0 4px !important;
+  }
+
+  /* Fix text wrapping inside task details */
+  .task-card p,
+  .task-card span {
+    word-break: break-word;
+  }
+
+  /* Make Add Task button full width */
+  .add-task-btn {
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+
+  /* Modal adjustments */
+  .ant-modal {
+    max-width: 95% !important;
+    margin: 0 auto !important;
+  }
+
+  .ant-modal-content {
+    padding: 16px !important;
+  }
+
+  /* Fix form layout inside modal */
+  .ant-form-item {
+    margin-bottom: 12px !important;
+  }
+
+  .ant-input,
+  .ant-select-selector,
+  .ant-input-number {
+    width: 100% !important;
+  }
+
+  /* Footer buttons full width on mobile */
+  .modal-footer-buttons {
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  .modal-footer-buttons button {
+    width: 100% !important;
+  }
+}

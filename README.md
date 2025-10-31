@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Timesheet Management
 
-## Getting Started
+A simple and efficient **Timesheet Management** system built with **Next.js** to store and manage daily task details.  
+This app allows users to log in, view weekly task summaries, and add or edit their daily work entries.
 
-First, run the development server:
+---
 
-```bash
+##  Project Overview
+
+The Timesheet Management system helps users maintain a structured record of their daily work.  
+It supports session-based authentication, enabling personalized task tracking for each logged-in user.
+
+---
+
+## Features
+
+- **User Login** – Secure authentication with session-based data storage  
+- **Weeks Listing** – View tasks grouped by week  
+- **Days & Task Listing** – See daily breakdown of work done within a week  
+- **Add / Edit Task** – Create or update your daily task entries  
+- **Session Handling** – Ensures user-specific data access and secure task tracking  
+
+---
+
+## Tech Stack
+
+- **Framework:** Next.js  
+- **Language:** TypeScript / JavaScript  
+- **UI Library:** Ant Design (if used)  
+- **Authentication:** NextAuth.js  
+- **Styling:** Tailwind CSS or CSS Modules (based on your setup)  
+
+---
+
+## Login Credential
+    
+    email : admin@example.com
+    password : password123
+
+##  Environment Variables
+
+Create a `.env.local` file in the project root and add the following:
+
+```env
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=supersecretkey123
+
+# 1️ Clone the repository
+git clone https://github.com/<your-username>/timesheet-management.git
+
+# 2️ Navigate to the project folder
+cd timesheet-management
+
+# 3️ Install dependencies
+npm install
+
+# 4️ Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
