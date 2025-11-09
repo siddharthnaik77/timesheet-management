@@ -134,7 +134,8 @@ export default function Dashboard() {
     title: "Week",
     dataIndex: "week",
     key: "week",
-    sorter: (a, b) => a.week - b.week,
+    sorter: (a: { week: number }, b: { week: number }) => a.week - b.week,
+
     sortDirections: ["ascend", "descend"],
     onCell: () => ({
       style: {
