@@ -49,12 +49,23 @@ export default function Dashboard() {
       friday.setDate(monday.getDate() + 4);
 
       // use to format data string 
-      const formatDateRange = (startDate, endDate) => {
-        const startDay = startDate.getDate();
-        const endDay = endDate.getDate();
-        const month = endDate.toLocaleString("default", { month: "long" });
-        const year = endDate.getFullYear();
-        return `${startDay}–${endDay} ${month} ${year}`;
+      // const formatDateRange = (startDate, endDate) => {
+      //   const startDay = startDate.getDate();
+      //   const endDay = endDate.getDate();
+      //   const month = endDate.toLocaleString("default", { month: "long" });
+      //   const year = endDate.getFullYear();
+      //   return `${startDay}–${endDay} ${month} ${year}`;
+      // };
+
+      const formatDateRange = (startDate: string | Date, endDate: string | Date) => {
+        const start = new Date(startDate);
+        const end = new Date(endDate);
+
+        const startDay = start.getDate();
+        const endDay = end.getDate();
+        const month = end.toLocaleString("default", { month: "long" });
+
+        return `${startDay}–${endDay} ${month}`;
       };
 
       weeks.push({
